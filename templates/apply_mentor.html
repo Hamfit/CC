@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply as a Mentor - CourseConnect</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+
+    <div class="mentor-application-container">
+        <div class="form-header">
+            <h1>Apply as a Mentor</h1>
+            <p>Share your knowledge and guide students through their academic journey by becoming a mentor on CourseConnect.</p>
+        </div>
+
+        <form action="submit_mentor_application" method="POST">
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" name="specialization" placeholder="E.g., Web Development, Data Science" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="5" placeholder="Briefly describe your experience and why you want to become a mentor." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability:</label>
+                <select id="availability" name="availability">
+                    <option value="part-time">Part-time</option>
+                    <option value="full-time">Full-time</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

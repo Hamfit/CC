@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CourseConnect</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="CourseConnect Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#mentor">Find a Mentor</a></li>
+                <li><a href="#appointments">My Appointments</a></li>
+                <li><a href="#materials">Learning Materials</a></li>
+                <li><a href="#profile">Profile Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section id="mentor">
+                <h2>Find a Mentor</h2>
+                <p>Connect with academically strong students who can help you with your studies.</p>
+                <form action="#" method="POST">
+                    <label for="coursecode">Course Code:</label>
+                    <input type="text" id="coursecode" name="coursecode" required>
+
+                    <label for="mentor">Mentor:</label>
+                    <select id="mentor" name="mentor" required>
+                        <option value="">Select a mentor</option>
+                        <option value="mentor1">Mentor 1</option>
+                        <option value="mentor2">Mentor 2</option>
+                    </select>
+
+                    <button type="submit" class="cta-button">Book Appointment</button>
+                </form>
+            </section>
+
+            <section id="appointments">
+                <h2>My Appointments</h2>
+                <p>View and manage your upcoming mentor appointments.</p>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Mentor</th>
+                        <th>Course Code</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>12/09/2024</td>
+                        <td>Mentor 1</td>
+                        <td>CSC101</td>
+                        <td><button class="cta-button">Cancel</button></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="materials">
+                <h2>Learning Materials</h2>
+                <p>Access course materials uploaded by your mentors.</p>
+                <ul>
+                    <li><a href="materials/csc101.pdf" download>CSC101 - Introduction to Computing</a></li>
+                    <li><a href="materials/mth102.pdf" download>MTH102 - Calculus I</a></li>
+                </ul>
+            </section>
+
+            <section id="profile">
+                <h2>Profile Settings</h2>
+                <p>Update your personal information and preferences.</p>
+                <form action="#" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" value="Ope Fawaz Ademola" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="opefawaz@example.com" required>
+
+                    <label for="university">University:</label>
+                    <input type="text" id="university" name="university" value="University of Agriculture" required>
+
+                    <label for="coursecode">Course Code:</label>
+                    <input type="text" id="coursecode" name="coursecode" value="CSC101" required>
+
+                    <button type="submit" class="cta-button">Update Profile</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CourseConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
